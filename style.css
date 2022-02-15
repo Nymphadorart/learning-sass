@@ -59,8 +59,8 @@ body .superpower {
   transform: translate(100px, 0px);
 }
 
-/* Mise en forme reproduction*/
-.photo {
+/* Reproduction*/
+.blocphoto {
   border: 5px groove purple;
   border-radius: 5%;
   background-color: white;
@@ -108,6 +108,18 @@ body .superpower {
   width: 100%;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.superposition .photo {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-color: red;
+  color: white;
+  margin: 0px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
 }
 
 .superposition:hover {
