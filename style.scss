@@ -1,0 +1,131 @@
+/* Mise en forme DRILL */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(158, 158, 248);
+    .debut {
+        text-align:center;
+    }
+    .superpower {
+        color: red;   
+    }
+}
+
+.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-color: rgb(255, 161, 161);
+    gap: 12px;
+    height: 300px;
+}
+  
+.box div {
+    border: 5px solid white;
+    background-color: rgb(139, 8, 139);
+    color: white;
+    padding: 12px;
+}
+  
+.box div.click:hover, .box div.zoom:hover, .box div.move:hover {
+    background-color: white;
+    color: rgb(139, 8, 139);
+    color: rgb(139, 8, 139);
+    -webkit-transition: 1s;
+    transition: 1s;
+    }
+  
+.box div.zoom:hover {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+}
+  
+.box div.move:hover {
+    -webkit-transform: translate(100px, 0px);
+    transform: translate(100px, 0px);
+}
+  
+/* Mise en forme reproduction*/
+.photo {
+    border: 5px groove purple;
+    border-radius: 5%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.india:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    opacity: 0.5;
+    -webkit-transition: 1s;
+    transition: 1s;
+    }
+
+
+  
+.superposition {
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    padding-left: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 25%;
+    width: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+  
+.superposition:hover {
+    height: 60%;
+}
+
+p.date {
+    position: absolute;
+    margin: 10px;
+    width: 55px;
+    background: red;
+    color: white;
+    height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 45px;
+    top: 7%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
+  
